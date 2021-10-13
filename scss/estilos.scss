@@ -1,0 +1,97 @@
+ul{
+    list-style-type: none;
+}
+
+.ola{
+    display: none;
+}
+
+.formumostrado{
+    display: block;
+}
+
+
+#mensaje{
+    color:red;
+    display: none;
+    text-align: center;
+}
+.container{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+    
+    width: 150px;
+    height: 150px;
+}
+
+.mb-1{
+    margin-top: 20px;
+}
+
+#descripcion{
+    margin-top: 30px;
+}
+
+.ultimossignos{
+    border-style: groove;
+    list-style: none;
+    
+}
+
+.ultimossignos li{
+    padding: 15px;
+}
+ .col-md-6{
+     list-style: none;
+     padding-left: 10px;
+ }
+ .contder{
+    margin-left: 40px;
+ }
+
+ .col-md-6 p{
+    margin-bottom: 8px;
+    
+ }
+
+ .antecedentestitulo{
+    font-weight: 700;
+ }
+ .ultimossignostitulo{
+    padding: 25px;
+    font-weight: 700;
+ }
+
+ #campos label{
+     padding-top: 10px;
+ }
+ .antecedentestitulo2{
+    font-weight: 700;
+    padding-top: 20px;
+ }
+
+ .formActu ul li{
+     border-style: groove;
+     margin: 10px;
+     padding: 30px;
+ }
+ .formActu ul{
+    
+    padding-left: -32px;
+}
+.datosAntecedentes ul p{
+    border-style: groove;
+     margin: 10px;
+     padding: 30px;
+    
+}
+
+.datosAntecedentes ul{
+    border-style: groove;
+     margin: 10px;
+     padding: 30px;
+    
+}

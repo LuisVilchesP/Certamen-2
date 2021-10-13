@@ -1,0 +1,19 @@
+{
+  "name": "tarea2",
+  "version": "1.0.0",
+  "description": "Solución de la tarea 2, el cual consiste crear un formulario usando el framework bootstrap usando scss y ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --recursive -o css scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sass-node": "^4.11.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.6"
+  }
+}

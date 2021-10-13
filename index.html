@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tarea 2: Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--framework de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link href="css/estilos.css" rel="stylesheet">
+        <!--iconos boostrap-->
+        
+      </head>
+    <body>
+
+        <div class="container">
+          <div class="row mb-1">
+            <div class="col-md-2 themed-grid-col">
+              <img src="img/608-6080578_png-file-svg-icono-de-persona-png.png" alt="">
+            </div>
+              
+            <div class="col-md-8 themed-grid-col">
+              <p>Pepito Pérez</p>
+              <p>Septiembre 2021, 1979, 43 años</p>
+              <button id="editar" onclick="mostrarEditar()">editar</button>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-md-6 themed-grid-col">
+              <p class="ultimossignostitulo">Últimos signos vitales</p>
+                <div class="ultimossignos">
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg> 
+                    Estatura  23132
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg> 
+                    Peso  21321
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                   Frecuencia Cardiaca 21321
+                  </li>
+                
+
+              </div>
+              
+              
+              
+
+            </div>
+            <div class="col-md-6 themed-grid-col">
+              <div class="contder">
+
+                <p class="antecedentestitulo">
+                  Antecedentes Clínicos <button type="button" class="btn btn-outline-dark">+</button>
+              </p>
+              <p>_____________________________________</p>
+              <li>
+                <p>20-10-2020</p>
+                <p>Hospitalizado por bronquitis</p>
+                <p>____________________________________</p>
+              </li>
+              <li>
+                <p>20-01-2009</p>
+                <p>Hospitalizado por intoxicación</p>
+                <p>____________________________________</p>
+              </li>
+              <li>
+                <p>20-01-2009</p>
+                <p>Hospitalizado por XXXXXXXX</p>
+                <p>____________________________________</p>
+              </li>
+            </div>
+
+          </div>
+          </div>
+          
+          <ul id="descripcion">
+            
+          </ul>
+          <div id="mensaje">Hemos recibido sus datos, pronto nos estaremos comunicando con usted</div>
+
+          <div class="contformu" id="contformu">
+            <form name="formulario" class="ola" novalidate>
+                <!--primer campo-->
+                <ul id="campos">
+                  <div class="row mb-3">
+                    <div class="col-md-6 themed-grid-col"></div>
+                    <div class="col-md-6 themed-grid-col">
+                      <li>
+                        <div class="col">
+                         <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+                         <input type="text" class="form-control" id="nombrecompleto" value="" required>
+                         <div class="valid-feedback">
+                           Nombre Completo está correcto
+                         </div>
+                         <div class="invalid-feedback">
+                             
+                         </div>
+                       </div>
+                   </li>
+                   <li>
+                     <!--segundo campo-->
+                     <div class="col">
+                       <label for="edad" class="form-label">Edad</label>
+                       <input type="text" class="form-control" id="rut" value="" required>
+                       <div class="valid-feedback">
+                         Edad esta correcto
+                       </div>
+                       <div class="invalid-feedback">
+                           
+                       </div>
+                     </div>
+                   </li>
+                   <!--tercer campo-->
+                   <div class="col-md-4">
+                     <label for="state" class="form-label">Género</label>
+                     <select class="form-select" id="state" required="">
+                       <option value="">Choose...</option>
+                       <option>Hombre</option>
+                       <option>Mujer</option>
+                       <option>Otro</option>
+                       <option>Prefiero no especificar</option>
+                     </select>
+                     <div class="invalid-feedback">
+                       Selecciona un género válido
+                     </div>
+                   </div>
+                   <!--cuarto campo-->
+                   <div class="col">
+                     <label for="fechanacimiento" class="form-label">Fecha de nacimiento</label>
+                     <input type="date" class="form-control" id="fechanacimiento" value="" required>
+                     <div class="valid-feedback">
+                       Fecha esta correcta
+                     </div>
+                     <div class="invalid-feedback">
+                         
+                     </div>
+                   </div>
+                   <!--quinto campo-->
+                   <li>
+                     <div class="col">
+                       <label for="email" class="form-label">Correo Electrónico</label>
+                       <input type="email" class="form-control" id="email" value="" required>
+                       <div class="valid-feedback">
+                         Correo Electrónico
+                       </div>
+                       <div class="invalid-feedback">
+                           Requerido y de tipo correo electrónico
+                       </div>
+                     </div>
+                   </li>
+                   <!--cuarto campo-->
+                   <li>
+                     <div class="col">
+                       <label for="telefono" class="form-label">Telefono</label>
+                       <input type="tel" class="form-control" id="telefono" value="" required>
+                       <div class="valid-feedback">
+                         Telefono
+                       </div>
+                       <div class="invalid-feedback">
+                         Campo requerido
+                       </div>
+                     </div>
+     
+                   </li>
+                   <!--quinto campo-->
+                   <div class="col">
+                     <label for="rut" class="form-label">RUT</label>
+                     <input type="text" class="form-control" id="rut" value="" required>
+                     <div class="valid-feedback">
+                       Rut esta correcto
+                     </div>
+                     <div class="invalid-feedback">
+                         
+                     </div>
+                   </div>
+   
+                   <!--sexto campo-->
+                   <div class="col-md-4">
+                     <label for="state" class="form-label">Región</label>
+                     <select class="form-select" id="state" required="">
+                       <option value="">Selecciona una región</option>
+                       <option>Valparaíso</option>
+                       <option>Metropolitana</option>
+                     </select>
+                     <div class="invalid-feedback">
+                       Selecciona una región
+                     </div>
+                   </div>
+                   <!--septimo campo-->
+                   <div class="col-md-4">
+                     <label for="state" class="form-label">Región</label>
+                     <select class="form-select" id="state" required="">
+                       <option value="">Selecciona una comuna</option>
+                       <option>Valparaíso</option>
+                       <option>Metropolitana</option>
+                     </select>
+                     <div class="invalid-feedback">
+                       Selecciona una región
+                     </div>
+                   </div>
+                   <!--octavo campo-->
+                  <div class="formActu">
+                    <p class="antecedentestitulo2">
+                      Antecedentes Clínicos <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                  </p>
+                  <ul>
+                    <li>
+                      <p>Hospitalizado por bronquitis</p>
+                      <p>Fecha: 23/05/2005</p>
+                    </li>
+                    <li>
+                      <p>Hospitalizado por bronquitis</p>
+                      <p>Fecha: 23/05/2005</p>
+                    </li>
+                    <li>
+                      <p>Hospitalizado por bronquitis</p>
+                      <p>Fecha: 23/05/2005</p>
+                    </li>
+                  </ul>
+
+                  </div>
+
+                  
+                  <p>Datos Antecedentes Clínicos</p>
+                  <div class="datosAntecedentes">
+                    
+                    <ul>
+                      <li>
+                        <p>Motivo Hosipitalización</p>
+                      </li>
+
+                        <li>
+                          <label for="fechanacimiento" class="form-label"></label>
+                          <input type="date" class="form-control" id="fechanacimiento" value="" required>
+                          <div class="valid-feedback">
+                            Fecha esta correcta
+                          </div>
+                          <div class="invalid-feedback">
+                              
+                          </div>
+                        </li>
+                        
+                        <li>
+                          <p>Crear</p>
+                        </li>
+                    </ul>
+
+                  </div>
+                      
+                    </div>
+                  </div>
+
+                
+               
+                <!--sexto campo-->
+                
+
+                
+                
+
+                <li>
+                  <div class="row justify-content-center">
+                  <div class="col-2">
+                     <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+                    <div class="col-2">
+                       <button class="btn btn-primary" type="button" id='limpiar'>Reset</button>
+                    </div>
+                  </div>
+                
+                </li>
+              
+            </form>
+
+        </div>
+        
+    </div>
+        <script>var exports={};</script>
+        <script src="js/inicio.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
